@@ -4,43 +4,59 @@
 
 
 /*============================================================================*/
+/* Elements access */
+/*============================================================================*/
+#define Me_Is_Output_On (Me->super.var_attr->Is_Output_On)
+#define Me_My_Timer (Me->super.My_Timer)
+#define Me_Delay_Is_Up (Me->super.Delay_Is_Up)
+#define Me_Delay_Duration (Me->super.Delay_Duration)
+
+
+/*============================================================================*/
 /* Public methods */
 /*============================================================================*/
-void Turn_On_Delay__Set( const Class_Turn_On_Delay* Me )
+static void Turn_On_Delay__Set( const Class_Turn_On_Delay* Me );
+static void Turn_On_Delay__Reset( const Class_Turn_On_Delay* Me );
+/*----------------------------------------------------------------------------*/
+static void Turn_On_Delay__Set( const Class_Turn_On_Delay* Me )
 {
-    if( false==Class_Triggered_Timer__Is_Active( Me->My_Timer ) )
+    if( false==Class_Triggered_Timer__Is_Active( Me_My_Timer ) )
     {
         Class_Triggered_Timer__Start(
-            Me->My_Timer,
-            Me->Turn_On_Delay_Duration );
+            Me_My_Timer,
+            Me_Delay_Duration );
     }
 }
 /*----------------------------------------------------------------------------*/
-void Turn_On_Delay__Reset( const Class_Turn_On_Delay* Me )
+static void Turn_On_Delay__Reset( const Class_Turn_On_Delay* Me )
 {
-    Class_Triggered_Timer__Stop( Me->My_Timer );
-    Me->var_attr->Is_Output_On = false;
-}
-/*----------------------------------------------------------------------------*/
-bool Turn_On_Delay__Get( const Class_Turn_On_Delay* Me )
-{
-    return Me->var_attr->Is_Output_On;
-}
-/*----------------------------------------------------------------------------*/
-void Turn_On_Delay__Tick( const Class_Turn_On_Delay* Me )
-{
-    Class_Triggered_Timer__Tick( Me->My_Timer );
+    Class_Triggered_Timer__Stop( Me_My_Timer );
+    Me_Is_Output_On = false;
 }
 
 
 /*============================================================================*/
 /* Received events */
 /*============================================================================*/
-void Turn_On_Delay__Timer_Is_Up( const Class_Turn_On_Delay* Me )
+static void Turn_On_Delay__Timer_Is_Up( const Class_Turn_On_Delay* Me );
+static void Turn_On_Delay__Timer_Is_Up( const Class_Turn_On_Delay* Me )
 {
-    Me->var_attr->Is_Output_On = true;
-    if( Me->Delay_Is_Up != NULL )
+    Me_Is_Output_On = true;
+    if( Me_Delay_Is_Up != NULL )
     {
-        Me->Delay_Is_Up();
+        Me_Delay_Is_Up();
     }
 }
+
+
+/*============================================================================*/
+/* Virtual operations realization */
+/*============================================================================*/
+Class_Delay_Virtual_Operations Turn_On_Delay_Operations = {
+    /* set */
+    ( void (*) (const Class_Delay*) )Turn_On_Delay__Set,
+    /* reset */
+    ( void (*) (const Class_Delay*) )Turn_On_Delay__Reset,
+    /* time_is_up */
+    ( void (*) (const Class_Delay*) )Turn_On_Delay__Timer_Is_Up
+};

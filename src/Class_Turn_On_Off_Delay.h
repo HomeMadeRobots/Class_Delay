@@ -5,54 +5,34 @@
 /*============================================================================*/
 /* Inclusions */
 /*============================================================================*/
-/* Attributes */
-#include <stdint.h>
-#include <stdbool.h>
-
-
-/* Associated objects */
-#include "Class_Triggered_Timer.h"
+#include "Class_Delay.h"
 
 
 /*============================================================================*/
 /* Class */
 /*============================================================================*/
 typedef struct {
-    bool Is_Output_On;
+    /* Inheritance */
+    Class_Delay_Var super;
+
     bool Is_Input_On;
 } Class_Turn_On_Off_Delay_Var;
 
 typedef struct {
 
-    /* Variable attributes */
-    Class_Turn_On_Off_Delay_Var* var_attr;
-    
-    /* Sent events */
-    void (*Delay_Is_Up)( void );
-    
-    /* Associated objects */
-    const Class_Triggered_Timer* My_Timer;
-    
-    /* Constants attributes */
-    uint32_t Turn_On_Delay_Duration;
-    uint32_t Turn_Off_Delay_Duration;
+    /* Inheritance */
+    Class_Delay super;
+
+    /* Configuration_Parameters */
+    uint32_t Off_Delay_Duration;
     
 } Class_Turn_On_Off_Delay;
 
 
 /*============================================================================*/
-/* Public methods */
+/* Virtual operations realization */
 /*============================================================================*/
-void Turn_On_Off_Delay__Set( const Class_Turn_On_Off_Delay* Me );
-void Turn_On_Off_Delay__Reset( const Class_Turn_On_Off_Delay* Me );
-bool Turn_On_Off_Delay__Get( const Class_Turn_On_Off_Delay* Me );
-void Turn_On_Off_Delay__Tick( const Class_Turn_On_Off_Delay* Me );
-
-
-/*============================================================================*/
-/* Event reception */
-/*============================================================================*/
-void Turn_On_Off_Delay__Timer_Is_Up( const Class_Turn_On_Off_Delay* Me );
+extern Class_Delay_Virtual_Operations Turn_On_Off_Delay_Operations;
 
 
 #endif
