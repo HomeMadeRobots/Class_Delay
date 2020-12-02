@@ -18,17 +18,17 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Project_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Project_Metamodel::Stereotypes</_hsubsystem>
+							<_hsubsystem type="a">Project_Metamodel::Common_Stereotypes</_hsubsystem>
 							<_hname type="a">Software_Package</_hname>
 							<_hid type="a">GUID afb0e42d-a399-4819-bb39-46f0fd0f0fbf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">9.7.2020::16:1:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">9.7.2020::16:1:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:3</_modifiedTime>
 			<_lastID type="a">18</_lastID>
-			<weakCGTime type="a">9.7.2020::16:1:51</weakCGTime>
+			<weakCGTime type="a">12.2.2020::10:1:3</weakCGTime>
 			<strongCGTime type="a">9.6.2020::21:12:32</strongCGTime>
 			<_defaultComposite type="s">GUID c49f0d96-27e1-4c66-a39b-a5417454cd08</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -292,15 +292,15 @@
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
 							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Diagrams</_hsubsystem>
-							<_hname type="a">SDD_Class_Diagram</_hname>
+							<_hname type="a">Internal_Design_Class_Diagram</_hname>
 							<_hid type="a">GUID 306a724c-fcf5-4198-8d6a-1d31c369487a</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">9.7.2020::16:1:36</_modifiedTime>
-			<_lastModifiedTime type="a">9.7.2020::16:1:36</_lastModifiedTime>
+			<_modifiedTime type="a">12.2.2020::10:1:32</_modifiedTime>
+			<_lastModifiedTime type="a">12.2.2020::10:1:32</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -442,7 +442,22 @@
 							<_Name type="a">ObjectModelGe</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
-									<size type="a">1</size>
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Internal_Design_Class</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Compartments</_Name>
+													<_Value type="a">Description,Attribute,Operation</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 									<IPropertyMetaclass type="e">
 										<_Name type="a">SDD_Class</_Name>
 										<Properties type="c">
@@ -491,7 +506,7 @@
 					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">2144</m_drawBehavior>
+			<m_drawBehavior type="a">395360</m_drawBehavior>
 			<m_transform type="a">0.267233 0 0 0.206774 404.466 4.9715 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
@@ -514,7 +529,7 @@
 			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=33%25,27%25,40%25&gt;
+			<frameset type="a">&lt;frameset rows=33%25,33%25,33%25&gt;
 &lt;frame name=DescriptionCompartment&gt;
 &lt;frame name=AttributeListCompartment&gt;
 &lt;frame name=OperationListCompartment&gt;</frameset>
@@ -538,14 +553,17 @@
 			<_id type="a">GUID 5eb7d297-4c4c-4139-8131-91e13143e862</_id>
 			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">All</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bShowInherited type="a">1</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
+			<_itemValueOfFontPropertiesMapCount type="a">2</_itemValueOfFontPropertiesMapCount>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 		</CGICompartment>
 		<CGICompartment type="e">
 			<_id type="a">GUID a923c16d-17ea-4197-aaf8-713919ed67f2</_id>
 			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">All</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bShowInherited type="a">1</m_bShowInherited>
 			<m_bOrdered type="a">1</m_bOrdered>
 			<Items type="c">
 				<IRPYRawContainer type="e">
@@ -592,7 +610,22 @@
 							<_Name type="a">ObjectModelGe</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
-									<size type="a">1</size>
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Internal_Design_Class</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Compartments</_Name>
+													<_Value type="a">Description,Attribute,Operation</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 									<IPropertyMetaclass type="e">
 										<_Name type="a">SDD_Class</_Name>
 										<Properties type="c">
@@ -644,7 +677,7 @@
 					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
-			<m_drawBehavior type="a">4128</m_drawBehavior>
+			<m_drawBehavior type="a">397408</m_drawBehavior>
 			<m_transform type="a">0.266418 0 0 0.206774 942.467 4.97153 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
@@ -667,7 +700,7 @@
 			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=38%25,14%25,48%25&gt;
+			<frameset type="a">&lt;frameset rows=33%25,33%25,33%25&gt;
 &lt;frame name=DescriptionCompartment&gt;
 &lt;frame name=AttributeListCompartment&gt;
 &lt;frame name=OperationListCompartment&gt;</frameset>
@@ -690,32 +723,18 @@
 		<CGICompartment type="e">
 			<_id type="a">GUID fb809279-605e-46d3-b7ac-2318f28d4a70</_id>
 			<m_name type="a">Attribute</m_name>
-			<m_displayOption type="a">Explicit</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">1</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
-			<Items type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">1</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IAttribute</_hm2Class>
-							<_hfilename type="a">.\..\..\..\Class_Triggered_Timer\mdl\Class_Triggered_Timer_rpy\Class_Triggered_Timer.sbsx</_hfilename>
-							<_hsubsystem type="a">Class_Triggered_Timer</_hsubsystem>
-							<_hclass type="a">Class_Triggered_Timer</_hclass>
-							<_hname type="a">Recurrence_Millisecond</_hname>
-							<_hid type="a">GUID dba39aad-aae1-4ed2-903a-e18da02bcab8</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</Items>
-			<_itemValueOfFontPropertiesMapCount type="a">1</_itemValueOfFontPropertiesMapCount>
+			<_itemValueOfFontPropertiesMapCount type="a">2</_itemValueOfFontPropertiesMapCount>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 		</CGICompartment>
 		<CGICompartment type="e">
 			<_id type="a">GUID b8238316-8049-4332-b19c-0dbbb077a974</_id>
 			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">All</m_displayOption>
-			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bShowInherited type="a">1</m_bShowInherited>
 			<m_bOrdered type="a">1</m_bOrdered>
 			<Items type="c">
 				<IRPYRawContainer type="e">
@@ -996,7 +1015,22 @@
 							<_Name type="a">ObjectModelGe</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
-									<size type="a">1</size>
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Internal_Design_Class</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Compartments</_Name>
+													<_Value type="a">Description,Attribute,Operation</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 									<IPropertyMetaclass type="e">
 										<_Name type="a">SDD_Class</_Name>
 										<Properties type="c">
@@ -1068,7 +1102,7 @@
 			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=33%25,27%25,40%25&gt;
+			<frameset type="a">&lt;frameset rows=28%25,30%25,42%25&gt;
 &lt;frame name=DescriptionCompartment&gt;
 &lt;frame name=AttributeListCompartment&gt;
 &lt;frame name=OperationListCompartment&gt;</frameset>
@@ -1101,6 +1135,9 @@
 			<m_displayOption type="a">All</m_displayOption>
 			<m_bShowInherited type="a">1</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
+			<_itemValueOfFontPropertiesMapCount type="a">2</_itemValueOfFontPropertiesMapCount>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 		</CGICompartment>
 		<CGICompartment type="e">
 			<_id type="a">GUID b7c089fe-10ba-4c68-9ce9-9bc25f51f11d</_id>
@@ -1147,7 +1184,22 @@
 							<_Name type="a">ObjectModelGe</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
-									<size type="a">1</size>
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Internal_Design_Class</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Compartments</_Name>
+													<_Value type="a">Description,Attribute,Operation</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 									<IPropertyMetaclass type="e">
 										<_Name type="a">SDD_Class</_Name>
 										<Properties type="c">
@@ -1219,7 +1271,7 @@
 			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=33%25,26%25,41%25&gt;
+			<frameset type="a">&lt;frameset rows=28%25,31%25,41%25&gt;
 &lt;frame name=DescriptionCompartment&gt;
 &lt;frame name=AttributeListCompartment&gt;
 &lt;frame name=OperationListCompartment&gt;</frameset>
@@ -1252,6 +1304,9 @@
 			<m_displayOption type="a">All</m_displayOption>
 			<m_bShowInherited type="a">1</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
+			<_itemValueOfFontPropertiesMapCount type="a">2</_itemValueOfFontPropertiesMapCount>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 		</CGICompartment>
 		<CGICompartment type="e">
 			<_id type="a">GUID 923e04b9-13a0-463e-9cfb-ed128e2c8cd2</_id>
@@ -1327,7 +1382,22 @@
 							<_Name type="a">ObjectModelGe</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
-									<size type="a">1</size>
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Internal_Design_Class</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">Compartments</_Name>
+													<_Value type="a">Description,Attribute,Operation</_Value>
+													<_Type type="a">MultiLine</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 									<IPropertyMetaclass type="e">
 										<_Name type="a">SDD_Class</_Name>
 										<Properties type="c">
@@ -1399,7 +1469,7 @@
 			<m_polygon type="a">4 2 329  2 1451  1061 1451  1061 329  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=18%25,43%25,39%25&gt;
+			<frameset type="a">&lt;frameset rows=21%25,39%25,40%25&gt;
 &lt;frame name=DescriptionCompartment&gt;
 &lt;frame name=AttributeListCompartment&gt;
 &lt;frame name=OperationListCompartment&gt;</frameset>
@@ -1438,18 +1508,6 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IAttribute</_hm2Class>
-							<_hid type="a">GUID 67c4dfc7-1a1e-439a-8ea8-65214170da2f</_hid>
-						</IHandle>
-					
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IAttribute</_hm2Class>
-							<_hid type="a">GUID 92b671b8-0a46-4d52-b0bf-aeff50991510</_hid>
-						</IHandle>
-					
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IAttribute</_hm2Class>
 							<_hid type="a">GUID a717094f-e450-4636-b9f2-3540a6e07413</_hid>
 						</IHandle>
 					
@@ -1457,6 +1515,18 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IAttribute</_hm2Class>
 							<_hid type="a">GUID b6ed5e38-4ca6-4e95-9807-894065ce4c38</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IAttribute</_hm2Class>
+							<_hid type="a">GUID 67c4dfc7-1a1e-439a-8ea8-65214170da2f</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IAttribute</_hm2Class>
+							<_hid type="a">GUID 92b671b8-0a46-4d52-b0bf-aeff50991510</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
@@ -1924,7 +1994,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">Send_Event</m_str>
+					<m_str type="a">Sent_Event</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2110,7 +2180,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">Send_Event</m_str>
+					<m_str type="a">Sent_Event</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2169,7 +2239,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">Receive_Event</m_str>
+					<m_str type="a">Received_Event</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5562,23 +5632,23 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">SDD_Class</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Internal_Design_Class</_hname>
 							<_hid type="a">GUID 9db356bc-6146-4703-a6f1-f05eb819dbfa</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">9.7.2020::16:1:33</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:12</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 70b02b67-1333-4f30-b93e-b9bce83d513e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">9.7.2020::16:1:33</_modifiedTime>
+			<_modifiedTime type="a">12.2.2020::10:1:12</_modifiedTime>
 			<_lastID type="a">11</_lastID>
-			<weakCGTime type="a">9.7.2020::16:1:33</weakCGTime>
+			<weakCGTime type="a">12.2.2020::10:1:12</weakCGTime>
 			<strongCGTime type="a">8.14.2020::6:37:24</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -5608,7 +5678,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
 							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
-							<_hname type="a">Send_Event</_hname>
+							<_hname type="a">Sent_Event</_hname>
 							<_hid type="a">GUID 8d3c01aa-c9f5-4df6-91f9-66e5fd75fd0e</_hid>
 						</IHandle>
 					
@@ -5641,7 +5711,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
 							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
-							<_hname type="a">Receive_Event</_hname>
+							<_hname type="a">Received_Event</_hname>
 							<_hid type="a">GUID bbc84abc-ada7-4082-98d4-c7ae4bd0d743</_hid>
 						</IHandle>
 					
@@ -5676,8 +5746,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -5824,7 +5894,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					<IHandle type="e">
 						<_hm2Class type="a">IType</_hm2Class>
 						<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-						<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+						<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 						<_hname type="a">uint32</_hname>
 						<_hid type="a">GUID 3f1b684a-51d5-4374-a479-56bd195faa9e</_hid>
 					</IHandle>
@@ -5846,7 +5916,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					<IHandle type="e">
 						<_hm2Class type="a">IType</_hm2Class>
 						<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-						<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+						<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 						<_hname type="a">uint32</_hname>
 						<_hid type="a">GUID 3f1b684a-51d5-4374-a479-56bd195faa9e</_hid>
 					</IHandle>
@@ -6763,7 +6833,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-					<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+					<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 					<_hname type="a">boolean</_hname>
 					<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 				</IHandle>
@@ -6822,8 +6892,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -6898,8 +6968,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -6941,20 +7011,20 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
 							<_hname type="a">Variable_Attribute</_hname>
 							<_hid type="a">GUID 1ab5b469-21ae-4135-9ec4-5adfcbba6a24</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">8.14.2020::6:38:44</_modifiedTimeWeak>
-			<_modifiedTime type="a">8.14.2020::6:38:44</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:12</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-					<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+					<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 					<_hname type="a">boolean</_hname>
 					<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 				</IHandle>
@@ -6964,7 +7034,16 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 			<_static type="a">0</_static>
 			<_isReferenceAttr type="a">0</_isReferenceAttr>
 			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID b87d119c-1fc4-4999-8fd5-a1d172a003cf</value>
+			</AggregatesList>
 		</IAttribute>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID b87d119c-1fc4-4999-8fd5-a1d172a003cf</_id>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:12</_modifiedTime>
+			<_value type="a">False</_value>
+		</ILiteralSpecification>
 		<IAttribute type="e">
 			<_id type="a">GUID 67c4dfc7-1a1e-439a-8ea8-65214170da2f</_id>
 			<_myState type="a">8192</_myState>
@@ -6975,21 +7054,21 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Configuration_Attribute</_hname>
-							<_hid type="a">GUID a1930d35-ed9e-409a-bdd8-ec16bd7df6fb</_hid>
+							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Project_Metamodel.sbsx</_hfilename>
+							<_hsubsystem type="a">Project_Metamodel::Common_Stereotypes</_hsubsystem>
+							<_hname type="a">Configuration_Parameter</_hname>
+							<_hid type="a">GUID c7a97ee0-e497-4c57-aaf1-4aefdce59a69</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">8.14.2020::7:29:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">8.14.2020::7:29:24</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:3</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-					<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+					<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 					<_hname type="a">uint32</_hname>
 					<_hid type="a">GUID 3f1b684a-51d5-4374-a479-56bd195faa9e</_hid>
 				</IHandle>
@@ -6999,7 +7078,16 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 			<_static type="a">0</_static>
 			<_isReferenceAttr type="a">0</_isReferenceAttr>
 			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID 75280b91-bceb-4121-924e-7e0a25c8b3db</value>
+			</AggregatesList>
 		</IAttribute>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 75280b91-bceb-4121-924e-7e0a25c8b3db</_id>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:3</_modifiedTime>
+			<_value type="a">0</_value>
+		</ILiteralSpecification>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 6800aa6b-7b64-4df2-bdce-f1e9fb941a11</_id>
 			<_myState type="a">8192</_myState>
@@ -7034,8 +7122,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">SDD_Class</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Internal_Design_Class</_hname>
 							<_hid type="a">GUID 9db356bc-6146-4703-a6f1-f05eb819dbfa</_hid>
 						</IHandle>
 					
@@ -7075,8 +7163,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -8133,8 +8221,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -8466,7 +8554,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					<IHandle type="e">
 						<_hm2Class type="a">IType</_hm2Class>
 						<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-						<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+						<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 						<_hname type="a">boolean</_hname>
 						<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 					</IHandle>
@@ -8488,7 +8576,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					<IHandle type="e">
 						<_hm2Class type="a">IType</_hm2Class>
 						<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-						<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+						<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 						<_hname type="a">boolean</_hname>
 						<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 					</IHandle>
@@ -9978,7 +10066,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
 							<_hname type="a">Event_Reception</_hname>
 							<_hid type="a">GUID 92c0d054-4885-4324-a809-168f50241810</_hid>
 						</IHandle>
@@ -11081,7 +11169,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 			<_id type="a">GUID 85d1cd80-9b4f-41bd-b9f3-b05f3c512cdb</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_kind type="a">Language</_kind>
 		</IType>
 		<IGeneralization type="e">
@@ -11108,8 +11196,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">SDD_Class</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Internal_Design_Class</_hname>
 							<_hid type="a">GUID 9db356bc-6146-4703-a6f1-f05eb819dbfa</_hid>
 						</IHandle>
 					
@@ -11149,8 +11237,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -12271,8 +12359,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -12584,7 +12672,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					<IHandle type="e">
 						<_hm2Class type="a">IType</_hm2Class>
 						<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-						<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+						<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 						<_hname type="a">boolean</_hname>
 						<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 					</IHandle>
@@ -12606,7 +12694,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					<IHandle type="e">
 						<_hm2Class type="a">IType</_hm2Class>
 						<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-						<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+						<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 						<_hname type="a">boolean</_hname>
 						<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 					</IHandle>
@@ -14144,7 +14232,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
 							<_hname type="a">Event_Reception</_hname>
 							<_hid type="a">GUID 92c0d054-4885-4324-a809-168f50241810</_hid>
 						</IHandle>
@@ -15300,33 +15388,28 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">SDD_Class</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Internal_Design_Class</_hname>
 							<_hid type="a">GUID 9db356bc-6146-4703-a6f1-f05eb819dbfa</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">9.7.2020::16:0:5</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:32</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 70b02b67-1333-4f30-b93e-b9bce83d513e</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">9.7.2020::16:0:5</_modifiedTime>
+			<_modifiedTime type="a">12.2.2020::10:1:32</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">9.7.2020::16:0:5</weakCGTime>
+			<weakCGTime type="a">12.2.2020::10:1:32</weakCGTime>
 			<strongCGTime type="a">8.17.2020::13:48:55</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
-			<Associations type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 72c27aa2-43b5-4a1b-917e-855bb3e4f6be</value>
@@ -15348,8 +15431,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -17820,8 +17903,8 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Public_Method</_hname>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Internal_Design_Class</_hsubsystem>
+							<_hname type="a">Public_Operation</_hname>
 							<_hid type="a">GUID ecaa2fe0-5d3b-4cc3-9862-9159c7ea16d8</_hid>
 						</IHandle>
 					
@@ -20227,7 +20310,7 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
 							<_hname type="a">Event_Reception</_hname>
 							<_hid type="a">GUID 92c0d054-4885-4324-a809-168f50241810</_hid>
 						</IHandle>
@@ -21368,21 +21451,21 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
-							<_hname type="a">Configuration_Attribute</_hname>
-							<_hid type="a">GUID a1930d35-ed9e-409a-bdd8-ec16bd7df6fb</_hid>
+							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Project_Metamodel.sbsx</_hfilename>
+							<_hsubsystem type="a">Project_Metamodel::Common_Stereotypes</_hsubsystem>
+							<_hname type="a">Configuration_Parameter</_hname>
+							<_hid type="a">GUID c7a97ee0-e497-4c57-aaf1-4aefdce59a69</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">9.7.2020::15:55:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">8.14.2020::7:30:41</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:32</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-					<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+					<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 					<_hname type="a">uint32</_hname>
 					<_hid type="a">GUID 3f1b684a-51d5-4374-a479-56bd195faa9e</_hid>
 				</IHandle>
@@ -21392,7 +21475,16 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 			<_static type="a">0</_static>
 			<_isReferenceAttr type="a">0</_isReferenceAttr>
 			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID ca8ed8bc-669b-4d87-8050-20821f5d708b</value>
+			</AggregatesList>
 		</IAttribute>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID ca8ed8bc-669b-4d87-8050-20821f5d708b</_id>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:32</_modifiedTime>
+			<_value type="a">0</_value>
+		</ILiteralSpecification>
 		<IAttribute type="e">
 			<_id type="a">GUID a717094f-e450-4636-b9f2-3540a6e07413</_id>
 			<_myState type="a">8192</_myState>
@@ -21404,20 +21496,20 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Detailed_Design_Metamodel.sbsx</_hfilename>
-							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::SDD_Class</_hsubsystem>
+							<_hsubsystem type="a">Software_Detailed_Design_Metamodel::Stereotypes::Shared</_hsubsystem>
 							<_hname type="a">Variable_Attribute</_hname>
 							<_hid type="a">GUID 1ab5b469-21ae-4135-9ec4-5adfcbba6a24</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">9.7.2020::15:55:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">8.14.2020::8:13:42</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:28</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\Software_Model_Toolset\Rhapsody_Profiles\Software_Data_Type_Metamodel.sbsx</_hfilename>
-					<_hsubsystem type="a">Software_Data_Type_Metamodel::Stereotypes</_hsubsystem>
+					<_hsubsystem type="a">Software_Data_Type_Metamodel::Basic_Data_Types</_hsubsystem>
 					<_hname type="a">boolean</_hname>
 					<_hid type="a">GUID 5df8e979-be4c-4790-87a7-f8ee053c4162</_hid>
 				</IHandle>
@@ -21427,7 +21519,16 @@ A call to Reset() command immediately set the output to OFF.\par%0D
 			<_static type="a">0</_static>
 			<_isReferenceAttr type="a">0</_isReferenceAttr>
 			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID 7a621086-36fb-45f3-8971-ba4898fe32fd</value>
+			</AggregatesList>
 		</IAttribute>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 7a621086-36fb-45f3-8971-ba4898fe32fd</_id>
+			<_modifiedTimeWeak type="a">12.2.2020::10:1:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.2.2020::10:1:28</_modifiedTime>
+			<_value type="a">False</_value>
+		</ILiteralSpecification>
 		<IGeneralization type="e">
 			<_id type="a">GUID d9346089-513d-49c4-a01b-4b1426c1da3f</_id>
 			<_modifiedTimeWeak type="a">9.7.2020::15:55:45</_modifiedTimeWeak>
